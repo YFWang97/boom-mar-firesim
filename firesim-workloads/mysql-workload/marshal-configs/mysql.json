@@ -1,0 +1,15 @@
+{
+    "name" : "mysql",
+    "base" : "ubuntu-base.json",
+    "workdir" : "..",
+    "overlay" : "overlay",
+    "host-init" : "mysql_riscv_build.sh",
+    "ubuntu-packages" : [
+        "gcc",
+        "make",
+        "linux-tools-common",
+        "linux-tools-generic",
+        "clang",
+        "openssl"
+    ]
+}

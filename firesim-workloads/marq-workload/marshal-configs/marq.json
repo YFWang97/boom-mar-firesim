@@ -1,0 +1,16 @@
+{
+    "name" : "marq",
+    "base" : "ubuntu-base.json",
+    "workdir" : "..",
+    "overlay" : "overlay",
+    "files" : [["boom_csr.c", "/"], ["boom_csr.h", "/"], ["Makefile", "/"], ["marq_test.c", "/"]],
+    "ubuntu-packages" : [
+        "gcc",
+        "make",
+        "linux-tools-common",
+        "linux-tools-generic",
+        "clang",
+        "flex",
+        "bison"
+    ]
+}
