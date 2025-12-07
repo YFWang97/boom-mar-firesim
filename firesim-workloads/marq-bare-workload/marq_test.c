@@ -4,7 +4,7 @@
 #include "marq.h"
 
 int main (void) {
-    int a[64];
+    int a[32];
     register int i;
 
     printf("Int size is %ld\n", sizeof(int));
@@ -20,7 +20,7 @@ int main (void) {
     a[1] = 1;
     a[2] = 2;
     a[3] = 3;
-    for(i = 4; i < 64; i++) {
+    for(i = 4; i < 32; i++) {
 	a[i] = i;
     }
     disable_mar();
